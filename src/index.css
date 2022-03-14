@@ -1,13 +1,276 @@
 body {
-  margin: 0;
+  /* margin-left:30px; */
+  margin-right: 30px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #F3F3F3;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.checkout-header{
+  background-color: #FFFFFF;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  box-shadow: 5px 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.logo{
+  font-size: 30px;
+  padding-top: 5px;
+  color: rgb(230,46,119);
+  border-right: 4px solid #EBEBEB;
+}
+.checkout-list{
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  padding-top: 5px;
+  border-right: 4px solid #EBEBEB;
+}
+.head-down{
+  font-size: 16px;
+}
+.checkout-payment{
+  padding-top: 9px;
+  border-bottom: 4px solid #E62E77;
+  color: #E62E77;
+}
+.alert-info{
+  height: 40px;
+  background-color: rgb(224,237,255);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 5px;
+  margin-top: 100px;
+  padding-left: 28px;
+}
+span{
+  position: relative;
+  padding-top:0 ;
+  padding-left: 20px;
+  font-size: 16px;
+}
+.info-icon{
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+}
+.nav-heading{
+  padding: 0px 0 0px 34px;
+  color: #5C414D;
+  font-size: 18px;
+  font-weight: 700;
+}
+.payment-method{
+  width:30%;
+}
+.payment-list{
+  background-color: white;
+  line-height: 2.4;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+}
+.payment-option{
+  width: 100%;
+  height: 100%;
+}
+ .pay-detail{
+   display: flex;
+  width: 90%;
+  padding-left: 10px;
+  /* padding: 5px 15px; */
+  height: auto;
+}
+.pay-detail-container{
+  width: 45%;
+  /* padding: 5px 15px; */
+  height: auto;
+  margin-left:8px;
+  margin-right: 5px;
+
+}
+.sub-card{
+cursor: pointer;
+color: black;
+padding-left: 10px;
+position: relative;
+border-bottom: 1px solid #e2e2e2;
+}
+.sub-card:hover{
+color:red;
+border-radius: 5px;
+border-right: solid rgb(230,46,119);
+}
+/* Card Details */
+.card-container{
+  background-color: white;
+  padding: 15px 15px 15px 15px;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+.card-title{
+  font-size:16px;
+  font-weight: 600;
+  color:#3f414d;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #EBEBEB  ;
+
+}
+.card-content-container{
+  padding-top: 20px;
+  padding-right: 10px;
+  margin-right: 10px;
+
+}
+.credit-card-number input{
+  font-size: 16px;
+  font-weight: 400;
+  color:   #3f414d;
+  width:100%;
+  padding:5px;
+ border: none;
+ border-bottom: #8c8d94 1px solid;
+}
+.credit-card-number input:focus{
+  outline: none;
+}
+.expiry-detail{
+  display: flex;
+  flex-flow: column;
+ 
+  width: 100%;
+ padding-top:20px ;
+}
+.expiry-title{
+  font-size: 16px;
+  font-weight: 400;
+  color: #3f414d
+}
+.expiry-content{
+  display: flex;
+  justify-content: center;
+}
+.expiry-month input{
+  width: 60%;
+  border: none;
+  border-bottom: #3f414d 1px solid;
+}
+.expiry-month input:focus{
+  outline: none;
+}
+.expiry-cvv input{
+  width: 90%;
+  border: none;
+  border-bottom: #3f414d 1px solid;
+  
+}
+.expiry-cvv input:focus{
+  outline: none;
+}
+.expiry-icon{
+  font-size: 30px;
+  font-weight: 400;
+  color: #3f414d;
+  width:50%;
+  align-self: center;
+}
+.expiry-info{
+  font-size: 16px;
+  font-weight: 400;
+  color: #3f414d;
+}
+.checkbox-section{
+  width: 100%;
+  padding: 10px 5px;
+}
+input[type=checkbox] {
+  transform: scale(1.5);
+}
+.submit-btn button{
+  margin-top: 10px;
+  width:100%;
+  padding: 10px 5px;
+  color:#fff;
+  background-color: #E62E77;
+  font-size: 16px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  /* border-radius: 5px; */
+
+}
+.submit-btn button:focus{
+  outline: none;
+}
+.gpay-head{
+  color: #B297B2;
+  padding: 0;
+}
+.gift-card-pin{
+padding-top: 30px;
+}
+.gift-card-pin input{
+  font-size: 16px;
+  font-weight: 400;
+  color:   #3f414d;
+  width:100%;
+  padding:5px;
+ border: none;
+ border-bottom: #8c8d94 1px solid;
+}
+.gift-card-pin input:focus{
+  outline: none;
+}
+.shipping-details{
+  position: relative;
+   bottom: 0;
+   width: 30%;
+   /* height: 100%; */
+   background: white;
+   margin-top: 23px;
+   padding: 5px 15px;
+  box-shadow: 0 3px 3px 0 rgb(0 0 0 / 10%);
+}
+.item-detail{
+  background-color: white;
+  padding: 5px 15px;
+}
+.shipping-info{
+  background-color: #F3F3F3;
+  margin-top: 170px;
+}
+.container-fluid{
+  /* width: 100%; */
+  padding:20px 0px 0px 110px;
+}
+.checkout-footer{
+  background-color: #f3f3f3;
+  margin-top: auto;
+}
+.foot-column{
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 30px;
+}
+.icon{
+  font-size: 38px;
+  padding-right: 20px;
+}
+.desc{
+display: inline-block;
+}
+.desc-heading{
+  border-bottom: 1px solid #f3f3f3;
+  font-size:13px;
 }
